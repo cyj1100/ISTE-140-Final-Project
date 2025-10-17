@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Link to Font Awesome for adding icons like the hamburger menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Title of the webpage -->
+    <title>Multipage Website</title>
+</head>
+<body>
+    <!-- Navigation bar with links to different sections of the site -->
+    <section class="topnav" id="myTopnav">
+        <a href="../home/index.html" class="active">Home</a>
+        <a href="../deepfakes/deepfakes.html">About Deep Fakes</a>
+        <a href="../law/law.html">About Current Laws</a>
+        <a href="../examples/examples.html">Examples</a>
+
+        <!-- Hamburger icon for mobile navigation -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </section>
+
+    <!-- Main header section with introductory text and image -->
+    <header class="container intro">
+        <h1>What Impacts do AI Deepfakes Have on the Field of Law?</h1>
+    
+        <!-- Image of the author (replace with your own image) -->
+        <img src="../images/cabffshoot1.png" alt="Photo of Chaynj Jason">
+
+        <p>
+            I am an undergraduate student at Rochester Institute of Technology, 
+            and I present to you my research paper on AI in relation to the field of law. Please fill out the form below if you're interested in this topic. Enjoy!
+        </p>
+
+        <!-- Link to an external form for user interaction -->
+        <a href="https://solace.ist.rit.edu/~cyj1100/iste-140/assignment04/">Fill out my form here!</a>
+    </header>
+
+    <!-- Section for a powerful quote related to deepfakes -->
+    <section class="container quote">
+        <h2>
+            "The game-changing factor of deepfakes is the scope, scale, and sophistication of the technology involved, as almost anyone with a computer can fabricate
+            fake videos that are practically indistinguishable from authentic media."
+        </h2>
+
+        <!-- Attribution for the quote -->
+        <p>Mika Westerlund, 2019</p>
+    </section>
+
+    <!-- Article section discussing deepfakes and their legal implications -->
+    <article class="container article">
+        <h2>What are deepfakes?</h2>
+        <p>
+            One of the most fascinating developments in the realm of Artificial Intelligence is deepfake technology. This technology allows users to manipulate media 
+            to create false, yet realistic, photos, videos, or audio recordings of individuals acting in any way they desire. 
+        </p>
+
+        <h2>What does the law have to do with it?</h2>
+        <p>
+            Deepfakes are increasingly being used and distributed online, with a range of ethical and legal implications. Surprisingly, the majority of deepfakes online 
+            are pornographic in nature, and many are produced without consent. In fact, in 2024, around 96% of deepfakes were pornographic (Twomey et al.). 
+        </p>
+        <p>
+            This raises serious ethical questions, as the risks of reputational harm and exploitation are high. While the adult film industry could technically benefit 
+            from this technology by creating media that attracts large audiences, the absence of consent makes its use deeply problematic. 
+        </p>
+        <p>
+            Deepfakes also open the door to harmful activities such as revenge porn, harassment, and bullying. Furthermore, the political realm is at risk, as deepfakes 
+            can be used to spread fake news and misinformation, which can mislead the public and manipulate political opinions.
+        </p>
+    </article>
+
+    <!-- Section showcasing an example of deepfake manipulation -->
+    <section class="container example">
+        <h2>For Example:</h2>
+        <p>
+            Edited picture of former president Barack Obama shaking hands with Iranian President Mahmoud Ahmadinejad. Winston Smith published this media in 2010 as an 
+            experiment to test the effects of this technology. At the time, about 40% of conservatives remembered it as a real event, while about 30% of liberals also 
+            remembered it, showing signs of confirmation bias.
+        </p>
+
+        <!-- Image of the deepfake example -->
+        <img src="../images/pres.png" alt="Edited photo of former President Obama shaking hands with Iranian President Mahmoud Ahmadinejad.">
+    </section>
+
+    <!-- Footer section with a call to action for users to share their opinions -->
+    <footer>
+        <h2>Share Your Opinion!</h2>
+
+        <p>Click the button below to share with me your thoughts and opinion on this technology! I'd love to hear what your take on it is compared to mine. </p>
+
+        <!-- Button linking to the info form -->
+        <a href="https://solace.ist.rit.edu/~cyj1100/iste-140/assignment04/" class="button">Info Form</a>
+    </footer>
+
+    <!-- JavaScript function for responsive navigation menu -->
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive"; // Add "responsive" class for mobile view
+            } else {
+                x.className = "topnav"; // Remove "responsive" class to return to desktop view
+            }
+        }
+    </script>
+
+</body>
+</html>

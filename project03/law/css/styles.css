@@ -1,0 +1,195 @@
+/* Add a white background color to the top navigation and hide overflowing content */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(0, 145, 255); 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the background and text color of links when hovered over */
+.topnav a:hover {
+    background-color: gray;
+    color: black;
+}
+
+/* Highlight the active/current page link */
+.topnav a.active {
+    background-color: #379AE6FF; 
+    color: white;
+}
+
+/* Hide the hamburger menu icon by default (only shown on smaller screens) */
+.topnav .icon {
+    display: none;
+}
+
+/* Header styling: font, text color, padding, and centering */
+header {
+    font-family: 'Archivo', sans-serif;
+    color: #323842;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the header image */
+.intro img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 0px 0px 200px 200px; /* Creates a rounded bottom */
+}
+
+/* Layout for the intro section using CSS grid */
+.intro {
+    background: #379AE6FF;
+    color: #DEE1E6FF;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Two columns */
+    gap: 15px;
+    align-items: center;
+}
+
+/* Place text content in the first column of the grid */
+.intro h1,
+.intro p,
+.intro a {
+    grid-column: 1 / 2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paragraph styling inside the intro section */
+.intro p {
+    font-size: 20px;
+}
+
+/* Heading styling for larger title */
+.intro h1 {
+    font-size: 50px;
+}
+
+/* Styling for the article section */
+.article {
+    display: grid;
+    align-items: center;
+    font-size: 25px;
+    padding: 30px;
+}
+
+/* Footer styling */
+footer {
+    position: relative; /* Allows content to flow naturally */
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    background: #379AE6FF;
+    border-radius: 16px;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #DEE1E6FF;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Style for the call-to-action button */
+a.button {
+    padding: 20px 50px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+
+    background: #FFFFFF;
+    color: #171A1FFF;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+a.button:hover {
+    background: gray;
+}
+
+/* Responsive navigation: hide links except "Home" and show hamburger menu icon on small screens */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* Responsive topnav: rearrange links vertically on small screens when icon is clicked */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* General mobile responsiveness for layout, images, footer, and buttons */
+@media (max-width: 768px) {
+    .intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .intro img {
+        grid-column: 1 / 2;
+        margin: 0 auto;
+    }
+
+    .example {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .example img {
+        grid-column: 1 / 2;
+        margin: 0 auto;
+    }
+
+    footer {
+        font-size: 24px;
+        padding: 30px 15px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 12px 30px;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome for icon usage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- bxSlider CSS for quote carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <!-- Title for the webpage -->
+    <title>Examples</title>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <section class="topnav" id="myTopnav">
+        <!-- Navigation links -->
+        <a href="../home/index.html">Home</a>
+        <a href="../deepfakes/deepfakes.html">About Deep Fakes</a>
+        <a href="../law/law.html">About Current Laws</a>
+        <a href="../examples/examples.html" class="active">Examples</a>
+        
+        <!-- Hamburger icon for mobile navigation toggle -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </section>
+
+    <!-- Introductory Header Section -->
+    <header class="container intro">
+        <!-- Page title -->
+        <h1>What are some Examples of AI Deepfakes Having a Effect?</h1>
+        
+        <!-- Introductory image -->
+        <img src="../images/cabffshoot4.png" alt="Photo of Chaynj Jason">
+
+        <!-- Introductory paragraph -->
+        <p>
+            There are many instances of how this tech has effected many individuals. On this oage I'll discuss the most notable instance as well as walk you through 
+            quotes from professionals on this topic. 
+        </p>
+    </header>
+
+    <!-- Example Section -->
+    <section class="container example">
+        <h2>For Example:</h2>
+        
+        <!-- Description of a deepfake experiment -->
+        <p>
+            Edited picture of former president Barack Obama shaking hands with Iranian President Mahmoud Ahmadinejad. Winston Smith published this media in 2010 as an 
+            experiment to test the effects of this technology. At the time, about 40% of conservatives remembered it as a real event, while about 30% of liberals also 
+            remembered it, showing signs of confirmation bias.
+        </p>
+
+        <!-- Example image -->
+        <img src="../images/pres.png" alt="Edited photo of former President Obama shaking hands with Iranian President Mahmoud Ahmadinejad.">
+    </section>
+
+    <!-- Article section expanding on the example -->
+    <article class="container article">
+        <p>
+            A notable social experiment conducted in 2010 involved a fake photo of former President Barack Obama shaking hands with Iranian President Mahmoud Ahmadinejad. 
+            Despite the clear disclaimer that the image was not real, approximately 40% of conservatives and 30% of liberals remembered the event as though it had occurred. 
+        </p>
+        
+        <p>
+            This demonstrates the power of visual media in shaping public perception, even when the content is fabricated. Deepfakes, therefore, pose a significant threat 
+            to political stability and national security, as they could easily sway public opinion and undermine trust in political institutions. Additionally, deepfake 
+            technology has the potential to be used in corporate sabotage, such as manipulating stock prices by fabricating scandalous actions involving a company’s CEO.        
+        </p>
+    </article>
+
+    <!-- Quote Carousel Section -->
+    <section class="quotes">
+        <!-- Each quote is a slide for the bxSlider carousel -->
+        <p class="slide">"An increase in the accessibility of deepfake video production would lead to an increase in the prevalence of deepfake videos online and thus lead 
+        to increased damage to the value of real media in our information environment." - Twomey, John, et al.</p>
+
+        <p class="slide">"Because deep learning technology is so sophisticated, many worry it can easily dupe the public into thinking fake audio and video are real. 
+        Conversely, as fakes become more common, they may undermine trust in audiovisual material. Down we go into a post-truth, post-trust dystopia. That’s the fear, at least." - Foundation for Individual Rights and Expression</p>
+
+        <p class="slide">"As social media sites and email became commonplace, lawmakers in at least 17 states enacted laws that specifically refer to online impersonation 
+        done with an intent to intimidate, bully, threaten or harass a person through social media sites, email or other electronic or online communications." - National Conference of State Legislatures</p>
+        
+        <p class="slide">"There is a lack of work on the deepfake detection framework’s interpretability and dependability." - Akhtar, Zahid</p>
+        
+        <p class="slide">"The game-changing factor of deepfakes is the scope, scale, and sophistication of the technology involved, as almost anyone with a computer can fabricate fake videos that are practically indistinguishable from authentic media." - Westerlund, Mika</p>
+    </section>
+
+    <!-- Footer Section with call to action -->
+    <footer>
+        <h2>Share Your Opinion!</h2>
+
+        <p>Click the button below to share with me your thoughts and opinion on this technology! I'd love to hear what ur take on it is compared to mine. </p>
+
+        <!-- Button linking to a feedback form -->
+        <a href="https://solace.ist.rit.edu/~cyj1100/iste-140/assignment04/" class="button">Info Form</a>
+    </footer>
+
+<!-- JavaScript for mobile nav toggle -->
+<script>
+    /* Toggle responsive class for top navigation */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<!-- jQuery for bxSlider functionality -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- bxSlider plugin for sliding quotes -->
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+    /* Initialize bxSlider on quotes section */
+    $(document).ready(function(){
+        $('.quotes').bxSlider({
+            mode: 'horizontal',
+            auto: true,
+            pause: 9000,
+            slideMargin: 20,
+            adaptiveHeight: true,
+            pager: true,
+            controls: false
+        });
+    });
+</script>
+
+</body>
+</html>

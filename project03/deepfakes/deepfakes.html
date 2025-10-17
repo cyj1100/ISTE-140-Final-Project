@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome CDN for icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>About Deepfakes</title>
+</head>
+<body>
+
+    <!-- Navigation menu section -->
+    <section class="topnav" id="myTopnav">
+        <!-- Navigation links -->
+        <a href="../home/index.html">Home</a>
+        <a href="../deepfakes/deepfakes.html" class="active">About Deep Fakes</a>
+        <a href="../law/law.html">About Current Laws</a>
+        <a href="../examples/examples.html">Examples</a>
+        
+        <!-- Icon for responsive menu toggle -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </section>
+
+    <!-- Page header section with image and introduction -->
+    <header class="container intro">
+        <h1>What are Deep Fakes and How do they Effect the Media?</h1>
+    
+        <img src="../images/cabffshoot2.png" alt="Photo of Chaynj Jason">
+
+        <!-- Introductory paragraph -->
+        <p>
+            Deepfake technology is rooted in deep learning, an AI technique that trains models to recognize 
+            and replicate patterns based on vast amounts of data. This page will dive deeper into that technology 
+            along with how it effects the media.
+        </p>
+    </header>
+
+    <!-- Main content/article section -->
+    <article class="container article">
+        <h2>More about deepfakes in media</h2>
+
+        <!-- Explanation of the types of deepfakes -->
+        <p>
+            This technology can be categorized into four main types: identity swap, face reenactment, attribute manipulation, and entire face synthesis. Identity swap 
+            involves replacing one person's face with another’s. This is a common form of deepfake seen across various media. Face reenactment involves replacing a person’s 
+            facial expressions with those of someone else. Attribute manipulation involves altering features such as hair or skin color, often seen in social media filters. 
+            Finally, entire face synthesis generates entirely new, synthetic faces that do not belong to real people. These descriptions were sourced from Zahid Akhtar's 2024 
+            article in the National Center for Biotechnology Information. 
+        </p>
+
+        <!-- Discussion of ethical concerns and possible benefits -->
+        <p>
+            Deepfake technology can be harnessed for creative purposes, such as enriching media and communication. While there are valid concerns regarding its misuse, there 
+            is also room for responsible use of this technology in entertainment, education, and even medicine. The key is to ensure proper governance and regulation to mitigate 
+            the risks while allowing the technology to flourish in positive ways.
+        </p>
+    </article>
+
+    <!-- Footer section with a call-to-action -->
+    <footer>
+        <h2>Share Your Opinion!</h2>
+
+        <!-- User engagement prompt -->
+        <p>Click the button below to share with me your thoughts and opinion on this technology! I'd love to hear what ur take on it is compared to mine. </p>
+
+        <!-- Link to external form -->
+        <a href="https://solace.ist.rit.edu/~cyj1100/iste-140/assignment04/" class="button">Info Form</a>
+    </footer>
+
+<!-- JavaScript for responsive navigation menu -->
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
